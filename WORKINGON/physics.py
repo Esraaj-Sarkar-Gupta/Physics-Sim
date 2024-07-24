@@ -60,16 +60,22 @@ class body:
     def update(self, a, del_t):
         # b2 is our body of interest
         
-        if type(a) == str and a[0] == 'COLLISION':
-            self.v = 0.0
-            del_x = 0.0 # Redundant 
-            a = np.array([0.0,0.0])
+        if type(a) == str and a == 'COLLISION':
+            self.v = (-1) * self.v
+            
+            v_dir = self.v / mag(self.v)
+            del_x = 0.05 * v_dir
+            #del_x = 0.1 * v_dir
+            #del_x = 0.3 * v_dir
+            self.x = self.x + del_x
+            print("##")
+        else:
 
         #del_x = (self.v * del_t) + (0.5 * a + (del_t ** 2))
         #self.x = self.x + del_x
 
-        del_x = self.v * del_t
-        self.x = self.x + del_x
+            del_x = self.v * del_t
+            self.x = self.x + del_x
         
-        del_v = a*del_t
-        self.v = self.v + del_v
+            del_v = a*del_t
+            self.v = self.v + del_v
