@@ -2,10 +2,10 @@ print("Animator.py loaded...")
 import cv2
 import os
 print("> Imports complete")
-frames_folder = "/home/tsampi/Documents/Code/Collabs/Physics/frames"
+frames_folder = "./frames"
 
 video_name = "video.mp4"
-fps = 100 # Adjust fps as needed (e.g., 24, 30)
+fps = 10 # Adjust fps as needed (e.g., 24, 30)
 N = (20 * 100) -2# Number of frames in directory 
 
 # Get all frame filenames
