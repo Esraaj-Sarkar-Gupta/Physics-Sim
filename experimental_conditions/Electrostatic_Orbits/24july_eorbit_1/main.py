@@ -11,7 +11,7 @@ b1 = p.body("b1", b1v, b1x, 1, 1e-6, 1, "blue")
 
 b2v = np.array([0,0])
 b2x = np.array([0,0])
-b2 = p.body("b2", b2v, b2x, 1, 1e-3, 1, "green")
+b2 = p.body("b2", b2v, b2x, 1, -1e-3, 1, "green")
 
 # name v x radius charge mass color
 

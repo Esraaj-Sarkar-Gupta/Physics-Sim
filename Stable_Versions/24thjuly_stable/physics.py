@@ -22,7 +22,7 @@ def electrostatic(k , b1 , b2):
     # Force extered by q1 on q2
     r = b2.x - b1.x
     #r_dir = r / mag(r)
-    F = (-1) * (k * b1.charge * b2.charge) * (r / mag(r)**3)
+    F = (k * b1.charge * b2.charge) * (r / mag(r)**3)
     return F 
 
 class body:

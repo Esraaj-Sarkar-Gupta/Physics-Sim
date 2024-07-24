@@ -2,7 +2,7 @@ print("Animator.py loaded...")
 import cv2
 import os
 print("> Imports complete")
-frames_folder = "/home/tsampi/Documents/Code/Github/Physics-Sim/experimental_conditions/Electrostatic_Orbits/experimental_1/frames"
+frames_folder = "./frames"
 
 video_name = "video.mp4"
 fps = 10 # Adjust fps as needed (e.g., 24, 30)
