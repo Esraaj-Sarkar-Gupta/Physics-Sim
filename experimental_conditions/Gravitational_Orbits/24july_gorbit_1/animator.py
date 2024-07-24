@@ -2,11 +2,11 @@ print("Animator.py loaded...")
 import cv2
 import os
 print("> Imports complete")
-frames_folder = "/home/tsampi/Documents/Code/Github/Physics-Sim/Unstable/frames"
+frames_folder = "/home/tsampi/Documents/Code/Github/Physics-Sim/experimental_conditions/Electrostatic_Orbits/experimental_1/frames"
 
 video_name = "video.mp4"
 fps = 10 # Adjust fps as needed (e.g., 24, 30)
-N = 250 -2# Number of frames in directory 
+N = 2000 -2# Number of frames in directory 
 
 # Get all frame filenames
 frame_filenames = [os.path.join(frames_folder, f"frame_{i}.png") for i in range(N - 1)]  # 2001 for 0-2000 frames
