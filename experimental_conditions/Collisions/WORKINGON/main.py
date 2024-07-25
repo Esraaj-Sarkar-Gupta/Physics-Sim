@@ -12,6 +12,8 @@ filename = f"logs/logs.txt"
 
 START = time.localtime()
 
+savename = f"logs/logs_{START[7]}_{START[3]}-{START[4]}-{START[5]}.txt"
+
 try:
     os.remove(filename)
 except:
@@ -38,7 +40,10 @@ def log_display(text):
 
 log_display(f"Logging begins")
 
-t = np.linspace(0, 20, 20*100)
+total_time = 20 
+resolution = 100 #(frames per second)
+
+t = np.linspace(0, total_time, total_time * resolution)
 # initial time, final time, number of frames in between
 
 b1v = np.array([+5, 0])
@@ -51,6 +56,8 @@ b2 = phys.body("b2", b2v, b2x, 1, -0.0005 , 5, "green")
 # name v x radius charge mass color
 
 log_display("System characteristics defined and NOT logged")
+
+start_time = time.time()
 
 for i in range(len(t) - 1):
     if i % 100 == 0:
@@ -102,3 +109,6 @@ for i in range(len(t) - 1):
         
     log("=====END INSTANCE=====")
     # End Loop
+end_time = time.time()
+
+log_display(f"Loop ends in time {end_time - start_time:.4f}. Real time / simulated time ratio = {(end_time - start_time) / total_time :.4f}s")
