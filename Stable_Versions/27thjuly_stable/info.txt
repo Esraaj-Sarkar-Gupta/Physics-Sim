@@ -1,0 +1,7 @@
+Version:
+
+Supports multibody force interactions (gravitational and electrostatic)
+
+Supports dualbody collisions
+
+
