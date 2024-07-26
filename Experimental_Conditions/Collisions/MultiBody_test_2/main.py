@@ -47,25 +47,25 @@ t = np.linspace(0, total_sim_time , total_sim_time * sim_resolution)
 # initial time, final time, number of frames in between
 
 #Defining the system:
-b1v = np.array([0, 0])
+b1v = np.array([2, 2])
 b1x = np.array([0, 0])
-b1 = phys.body("b1", b1v, b1x, 1, 0.0, 5e+11, "blue")
+b1 = phys.body("b1", b1v, b1x, 0.5, 0.0, 5, "blue")
 
 b2v = np.array([0, 0])
-b2x = np.array([5, 0])
-b2 = phys.body("b2", b2v, b2x, 1, 0.0, 5e+11, "green")
+b2x = np.array([1, 1])
+b2 = phys.body("b2", b2v, b2x, 0.5, 0.0, 5, "green")
 
 b3v = np.array([0, 0])
-b3x = np.array([0, 3])
-b3 = phys.body("b3", b3v, b3x, 1, 0.0, 5e+11, "red")
+b3x = np.array([3, 3])
+b3 = phys.body("b3", b3v, b3x, 0.5, 0.0, 5, "red")
 
-b4v = np.array([0, 0])
-b4x = np.array([2, -1])
-b4 = phys.body("b4", b4v, b4x, 1, 0.0, 5e+11, "yellow")
+b4v = np.array([-1, -1])
+b4x = np.array([-2, -2])
+b4 = phys.body("b4", b4v, b4x, 0.5, 0.0, 5, "yellow")
 
-b5v = np.array([0, 0])
-b5x = np.array([4, 0.5])
-b5 = phys.body("b5", b5v, b5x, 1, 0.0, 5e+11, "purple")
+b5v = np.array([0.5 , 0.5])
+b5x = np.array([-4, -4])
+b5 = phys.body("b5", b5v, b5x, 0.5, 0.0, 5, "purple")
 
 
 # Format: name v x radius charge mass color

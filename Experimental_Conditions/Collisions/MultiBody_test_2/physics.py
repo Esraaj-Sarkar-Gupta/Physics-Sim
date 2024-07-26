@@ -91,7 +91,7 @@ def collide(p1 , p2):
         log("[MATH]: Collision >> Mathematics housekeeper found no errors.")
     else:
         log("[MATH]: Collision >> Process finished with errors. Expect erroinous behavior.")
-        print("> [Error]: Errors found in collision physics ")
+        #print("> [Error]: Errors found in collision physics ")
     
     return True
         
