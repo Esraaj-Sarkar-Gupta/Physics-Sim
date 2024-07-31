@@ -11,5 +11,7 @@ All calculations and processes run the engine are logged simulataniously. Minior
 Simulations are visualised using matplotlib-pyplot. 
 
 
-This engine has been emulated in javascript by (a psychopathic user, who writes code of this sort in js) @ashdagrat in https://github.com/AshDaGrat/Physics-Sim . 
-Ashdagrat uses different (and an agruably better) collision mechanics and also offers a UI allowing quick changes to the starting conditions. 
+This engine has been emulated in javascript by (a psychopathic user, who writes code of this sort in js) AshdaGrat in https://github.com/AshDaGrat/Physics-Sim . 
+AshDaGrat uses different (and an agruably better) collision mechanics and also offers a UI allowing quick changes to the starting conditions. 
+
+https://github.com/AshDaGrat
